@@ -1,0 +1,51 @@
+<div class="container my-5">
+<h1 class="mb-3">Add New Employee</h1>
+<div class="row">
+    <div class="col-6">
+<form #form="ngForm" (ngSubmit)="addEmployee()">
+    <div class="mb-3 row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" 
+            id="name" name="name" [(ngModel)]="addEmployeeRequest.name">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email"
+            name="email" [(ngModel)]="addEmployeeRequest.email">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="phone"
+            name="phone" [(ngModel)]="addEmployeeRequest.phone">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="salary" class="col-sm-2 col-form-label">Salary</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="salary"
+            name="salary" [(ngModel)]="addEmployeeRequest.salary">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="department" class="col-sm-2 col-form-label">Department</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="department"
+            name="department" [(ngModel)]="addEmployeeRequest.department">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary mb-3">Save</button>
+        </div>
+    </div>
+</form>
+    </div>
+</div>
+
+</div>
